@@ -8,7 +8,7 @@ To do list
 '''
 
 
-def encode_contact_number(contact_number,shift=3):
+def encode_contact_number(contact_number,shift=4):
     encoded_number=""
     for digits in contact_number:
         encoded_each_digit=str((int(digits) +shift) %10)
@@ -21,7 +21,7 @@ encoded_number = encode_contact_number(contact_number,shift=4)
 print("Encoded number:", encoded_number)
 
 ### decoding the number
-def decode_contact_number(encoded_contact_number, shift=3):
+def decode_contact_number(encoded_contact_number, shift=4):
     decoded_number = ""
     for digit in encoded_contact_number:
         decoded_digit = str((int(digit) - shift) % 10)
