@@ -1,17 +1,12 @@
 
 '''
 To do list
-1. Convert each digit to its Unicode code point: Use ord() for this
+1. Define a function with two paramietrs like:contact_number,shift
 2. Perform a simple arithmetic operation on each code point to obscure the original value.
 3. Convert the modified code points back to characters: Use chr() for this.
 4 Combine the characters to form the encoded contact number.
 '''
 
-
-import base64
-
-#contact_number="8801550156198"
-#contact_number=contact_number[2:]
 
 def encode_contact_number(contact_number,shift=3):
     encoded_number=""
